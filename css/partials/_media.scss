@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* === BEGIN MEDIA === */
+
+/* ======================
+$mobile-small 240px
+$mobile-large 320px
+$tablet-small 480px
+$tablet-large 768px
+$screen-small 1024px
+$screen-large 1280px 
+====================== */
+@media screen and (min-width: 490px) {
+	.page-wrap,
+	.container {
+		max-width: 720px;
+	}
+}
+@media screen and (max-width: 488px) {
+	.profile__description {
+		font-size: 12px;
+	}
+	.new-comment__btn {
+		font-size: 14px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media screen and (max-width: 447px) {
+	.profile__img {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.profile__title,
+	.profile__position {
+		text-align: center;
+	}
+	.profile__information {
+		padding-left: 0;
+	}
+	.profile__description {
+		position: static;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.services {
+		margin-top: 20px;
+		width: 100%;
+	}
+}
+/* === END MEDIA === */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page-wrap">
+		<div class="container">
+			<div class="profile">
+				<img src="img/photo.png" alt="Вероника Ростова" class="profile__img">
+				<div class="profile__information">
+					<h1 class="profile__title">Вероника Ростова</h1>
+					<h2 class="profile__position">Менеджер по продажам</h2>
+					<p class="profile__description">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</p>
+				</div>
+			</div>
+			<div class="services">
+				<h2 class="services__title">Услуг</h2>
+				<ul class="services__list">
+					<li class="services__item item-services">
+						<h3 class="item-services__title item-services__title--first-layer">Ручное бронирование</h3>
+						<p class="item-services__quantity">11</p>
+					</li>
+					<li class="services__item">
+						<h3 class="item-services__title item-services__title--second-layer">Пакетные туры</h3>
+						<p class="item-services__quantity">3</p>
+					</li>
+					<li class="services__item">
+						<h3 class="item-services__title item-services__title--third-layer">Отели</h3>
+						<p class="item-services__quantity">1</p>
+					</li>
+					<li class="services__item services__item--total">
+						<h3 class="item-services__title item-services__title--total">Всего</h3>
+						<p class="item-services__quantity item-services__quantity--total">15</p>
+					</li>
+				</ul>
+			</div>
+			<div class="reviews">
+				<div class="reviews__left">
+					<h3 class="reviews__last">Последние отзывы</h3>
+					<h4 class="reviews__all"><a href="javascript:void(0)">Все отзывы</a></h4>
+				</div>
+				<div class="reviews__right">
+					<div class="reviews__likes">
+						<span class="reviews__heart"></span>131</div>
+						<div class="reviews__comments">
+							<span class="reviews__quote"></span>14</div>
+						</div>
+					</div>
+					<div class="comments-wrap">
+						<div class="comments">
+							<h3 class="comments__title">Самуил
+								<span class="comments__date">13 октября 2011</span>
+							</h3>
+							<p class="comments__text">Привет, Верунь!ниче себе ты крутая.фотка класс!!!!
+								<span class="comments__triangle"></span>
+							</p>
+						</div>
+						<div class="comments">
+							<h3 class="comments__title comments__title--two">Лилия Семёновна
+								<span class="comments__date comments__date--two">14 октября 2011</span>
+							</h3>
+							<p class="comments__text comments__text--two">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?
+								<span class="comments__triangle"></span>
+							</p>
+						</div>
+						<div class="comments">
+							<h3 class="comments__title comments__title--three">Лилия Семёновна
+								<span class="comments__date comments__date--three">14 октября 2011</span>
+							</h3>
+							<p class="comments__text comments__text--three">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?
+								<span class="comments__triangle"></span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<form action="javascript:void(0)" method="POST" class="new-comment">
+					<div class="container">
+						<textarea name="message" rows="2" class="new-comment__message"></textarea>
+						<input type="submit"class="new-comment__btn" value="Написать консультанту">
+					</div>
+				</form>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="js/common.js"></script>
+		</body>
+		</html>
