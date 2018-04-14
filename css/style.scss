@@ -138,11 +138,36 @@ body {
 	border-bottom-right-radius: 3px;
 	padding: 5px 0 5px 6px;
 }
+@include keyframes (animationWidthFirstLayer) {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 218px;
+	}
+}
+@include keyframes (animationWidthSecondLayer) {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 54px;
+	}
+}
+@include keyframes (animationWidthThreeLayer) {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 36px;
+	}
+}
 .item-services__title--first-layer,
 .item-services__title--second-layer,
 .item-services__title--third-layer {
 	position: relative;
 	&::before {
+		@include animation (animationWidthFirstLayer 2s ease);
 		background-color: $green;
 		border-left: 1px solid $greenDark;
 		border-top-right-radius: 3px;
@@ -162,9 +187,11 @@ body {
 	border-left: 1px solid $blueBorder;
 }
 .item-services__title--second-layer::before {
+	@include animation (animationWidthSecondLayer 2s ease);
 	width: 54px;
 }
 .item-services__title--third-layer::before {
+	@include animation (animationWidthThreeLayer 2s ease);
 	width: 36px;
 }
 .item-services__quantity {
