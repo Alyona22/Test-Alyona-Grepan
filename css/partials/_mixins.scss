@@ -217,7 +217,6 @@
     -ms-transform: scale3d($a, $b, $c);
     transform: scale3d($a, $b, $c);
 }
-
 @mixin transformScale ($Sc) {
     -webkit-transform: scale($Sc);
     -moz-transform: scale($Sc);

@@ -12,6 +12,7 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 }
 a {
 	text-decoration: none;
+	color: $grayDark;
 }
 fieldset, img { 
 	border: 0;
@@ -277,6 +278,11 @@ body {
 		left: 0;
 		@include transformRotate (45deg);
 		@include transformOrigin (100% 100%);
+		@include transition (0.3s all ease);
+	}
+	&:hover::before,
+	&:hover::after {
+		background: $blueSea;
 	}
 }
 .reviews__likes {
@@ -293,6 +299,10 @@ body {
 	position: relative;
 	right: 4px;
 	width: 13px;
+	@include transition (0.3s all ease);
+	&:hover {
+		background: $blueSea;
+	}
 	&::after {
 		border-top: 4px solid $blueLight;
 		border-left: 4px solid transparent;
@@ -300,6 +310,9 @@ body {
 		position: absolute;
 		right: 3px;
 		top: 100%;
+	}
+	&:hover::after {
+		border-top: 4px solid $blueSea;
 	}
 }
 .comments__title {

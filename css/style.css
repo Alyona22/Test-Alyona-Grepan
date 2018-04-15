@@ -8,7 +8,8 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #333; }
 
 fieldset, img {
   border: 0; }
@@ -372,7 +373,13 @@ body {
     -webkit-transform-origin: 100% 100%;
     -moz-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
-    transform-origin: 100% 100%; }
+    transform-origin: 100% 100%;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+  .reviews__heart:hover::before, .reviews__heart:hover::after {
+    background: #005da1; }
 
 .reviews__likes {
   padding-right: 23px; }
@@ -387,7 +394,13 @@ body {
   height: 9px;
   position: relative;
   right: 4px;
-  width: 13px; }
+  width: 13px;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
+  .reviews__quote:hover {
+    background: #005da1; }
   .reviews__quote::after {
     border-top: 4px solid #73b4d5;
     border-left: 4px solid transparent;
@@ -395,6 +408,8 @@ body {
     position: absolute;
     right: 3px;
     top: 100%; }
+  .reviews__quote:hover::after {
+    border-top: 4px solid #005da1; }
 
 .comments__title {
   cursor: pointer;
